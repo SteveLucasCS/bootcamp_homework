@@ -1,0 +1,75 @@
+/* Import fonts from google fonts */
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+
+body {
+  background-color: #cccccc;
+}
+
+main {
+  font-family: 'Raleway', sans-serif;
+  width: 960px;
+  max-width: 100%;
+  margin: auto;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  padding: 1em;
+}
+
+header {
+  font-family: 'Lato', sans-serif;
+  width: 100%;
+  background-color: #ffffff;
+}
+
+#header-content {
+  width: 960px;
+  max-width: 100%;
+  margin: auto;
+  background-image: linear-gradient(to right, #9767b2, #ffffff, #ffffff);
+}
+
+nav {
+  text-align: right;
+  width: 50%;
+  float: right;
+  padding: 20px;
+
+}
+
+h1 {
+  font-size: 2em;
+  font-weight: bold;
+  color: #3a3a3a;
+  display: inline-block;
+  width: auto;
+  padding: 10px;
+}
+
+h2 {
+  font-size: 1.5em;
+  padding: 1em 0;
+  border-bottom: solid #3a3a3a 0.1em;
+}
+p {
+  line-height: 1.5em;
+  margin: 1em 0;
+}
+
+#portrait {
+  width: 20%;
+  max-width: 300px;
+  height: auto;
+  margin: 2em;
+  margin-left: 0;
+  margin-bottom: 1em;
+  float: left;
+}
+
+a {
+  text-decoration: none;
+  color: #9767b2;
+}
+
+section {
+  margin-top: 1.5em;
+}

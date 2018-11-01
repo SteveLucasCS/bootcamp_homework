@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+:root {--GVSU-Blue: #4E2A84}
+
+body {font-family: 'Roboto', sans-serif !important; width: 80%; margin:auto;}
+
+header, nav {color: #FFFFFF; background-color: var(--GVSU-Blue); font-size: 1.25em;}
+header {padding: 1em 3em; font-size: 1.75em;}
+
+h1 {padding: 0.5em 0; margin: 0; display: inline; font-size: 1em; font-weight: normal;}
+
+/* GVSU Logo */
+#gvsu-logo {float: right; height: 1em; width: auto; max-width: 60%;}
+
+nav {padding-bottom: 1em;}
+nav a:link, a:visited {color: #FFFFFF;}
+.active {text-decoration: none;}
+
+main a {color: var(--GVSU-Blue);}
+.always-blue-link {color: var(--GVSU-Blue) !important;}
+main a:active, main a:visited {color: rgb(119, 0, 255)}
+
+article {padding: 0.5em; border: solid var(--GVSU-Blue) medium; border-collapse: collapse;}
+
+section {border: solid black 2px; padding: 0.5em; margin: 1em 1em;}
+
+h4 {margin: 0.5em auto;}
+
+ul {margin: 0.5em auto;}
+
+.indented {margin-left: 1.5em;}
+
+img {max-width: 100%;}
+
+ol li {margin-bottom: 1em;}
+ol li img {display: block;}
+
+
+/*** Column CONTAINER ***/
+.box-columns-space-around{display:flex;flex-direction:row;width:100%;justify-content:space-around;}
