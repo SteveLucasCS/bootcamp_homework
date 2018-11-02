@@ -1,11 +1,26 @@
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 form {
-  margin: auto;
   width: 40%;
 }
 
 input, textarea {
-  display: block;
+  display: inline-block;
   width: 100%;
 }
+
+#contact-info {
+  width: 40%;
+  display: inline-block;
+}
+
+h3 {
+  margin-top: 1em;
+  font-size: 1.2em;
+}
+
 
 

@@ -18,7 +18,10 @@ h3 {
   font-family: 'Raleway', sans-serif;
   font-size: 1.3em;
   margin: 0.5em;
+  color: #9767b2;
+  font-weight: bold;
 }
+
 img {
   height: 187px;
   width: auto;
