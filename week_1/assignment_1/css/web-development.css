@@ -1,0 +1,36 @@
+
+h3 {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 1em 1em 1em 0em;
+}
+
+li {
+  padding: 0 0 0.4em 1em;
+}
+
+.example-row {
+  margin: 1.5em 0;
+  margin-bottom: 3em;
+  border-bottom: solid #9E75B4 medium;
+  background-color:rgb(201, 199, 199,0.1);
+}
+.example-row a {
+  text-decoration: underline;
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #6A4296;
+}
+.example-row p {
+  margin: 1em;
+}
+
+aside {
+  font-style: italic;
+  margin: 1em;
+}
+
+section {
+  margin-bottom: 3em;
+}
+

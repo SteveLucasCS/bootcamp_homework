@@ -1,0 +1,11 @@
+form {
+  margin: auto;
+  width: 40%;
+}
+
+input, textarea {
+  display: block;
+  width: 100%;
+}
+
+
