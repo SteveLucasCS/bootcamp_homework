@@ -1,0 +1,49 @@
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+form {
+  width: 40%;
+}
+
+input, textarea {
+  display: inline-block;
+  width: 100%;
+}
+
+#contact-info {
+  width: 40%;
+  display: inline-block;
+}
+
+h3 {
+  margin-top: 1em;
+  font-size: 1.2em;
+}
+
+@media only screen and (max-width: 740px) {
+
+  .flex-container {
+    flex-direction: column;
+  }
+  form {width: 70%; margin: auto;}
+  #contact-info {
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 1em;
+
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  form {
+    width: 90%;
+  }
+  #contact-info {
+    width: 90%;
+  }
+}
+
+

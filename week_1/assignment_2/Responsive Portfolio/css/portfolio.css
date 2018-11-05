@@ -1,0 +1,64 @@
+.card {
+  width: 40%;
+  height: auto;
+  display: flex;
+  flex-direction: column; 
+  justify-content: center;
+  margin: auto;
+  position: relative;  
+  margin: 5%;
+  overflow: hidden;
+}
+
+#card-one, #card-three {
+  float: left;
+}
+
+#card-two, #card-four {
+  float: right;
+}
+
+h3 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.3em;
+  margin: 0.5em;
+  color: #9767b2;
+  font-weight: bold;
+  margin: auto;
+}
+
+img {
+  margin: auto;
+  height: 187px;
+  width: auto;
+  max-width: 100%;
+  text-align: center;
+  border: solid rgb(0,0,0,.2) .2em;
+  margin-top: 1em;
+}
+
+@media only screen and (max-width: 830px) {
+  .card {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    margin-top: 2em;
+  }
+  img {
+    max-width: 70%;
+  }
+  h3 {
+    font-weight: normal;
+    font-size: 1.3em;
+  }
+  #card-one, #card-two, #card-three, #card-four {
+    float: none;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .card {
+    width: 100%;
+    float: none;
+  }
+}

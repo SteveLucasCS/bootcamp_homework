@@ -1,0 +1,833 @@
+/* Import fonts from google fonts */
+@import url('https://fonts.googleapis.com/css?family=Lato|Raleway');
+
+
+:root {
+	--QE-Blue: #042196;
+	--QE-Gold: #D6B302;
+	--light-blue: rgb(10, 44, 141, 0.2);
+	--med-blue: rgb(10, 44, 141, 0.3);
+	--light-gold: rgb(176, 146, 0, 0.5);
+}
+
+body {
+	margin: auto auto;
+	width: 100%;
+	padding: 0;
+	font-family: "Lato", sans-serif;
+}
+
+/* Default hyperlinks styling */
+/* unvisited links are blue, visited are gold */
+a {color: var(--QE-Blue);}
+
+a:link {color: var(--QE-Blue);}
+
+/* Link default style */
+a:visited {color: var(--QE-Gold);}
+
+/*********** Sticky Mobile Navbar *************************************/
+
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+
+/* a horizontal black line, 3 of which make up hamburger */
+.burgerbar {
+  width: 2em;
+  height: 0.35em;
+  background-color: var(--QE-Blue);
+  margin: 6px 0;
+}
+
+#hamburger {
+	display: block;
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 2em;
+	padding-top: 1em;
+	padding-right: 5%;
+}
+
+/****************** Dropdown Nav Menu ***************************************/
+/* The side navigation menu */
+.sidenav {
+  height: 19em;
+	max-height: 100%;
+  width: 0; /* Width is styled by script */
+  position: fixed;
+	z-index: 0;
+  top: 0; /* Stay at the top */
+  right: 0;
+  background-color: var(--QE-Blue);
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 3em; /* Place content 60px from the top */
+  transition: 0.2s; /* 0.5 second transition effect to slide in the sidenav */
+	text-align: center;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 0.25em 1em;
+  text-decoration: none;
+  font-size: 1em;
+  color: #ffffff;
+  display: block;
+  transition: 0.2s;
+}
+
+.side-sub-nav {
+	text-align: left;
+	padding-left: 0.5em;
+	margin-top: 0em;
+	margin-bottom: 0.5em;
+}
+
+.side-sub-nav .sub-link {
+	font-size: 0.8em;
+	margin-left: 1em;
+}
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 0.5em;
+	font-size: 2em;
+	padding: 0;
+	margin-top: 0.5em;
+}
+
+/*************************************************************************/
+
+article {
+	width: 90%;
+	margin: auto;
+	margin-top: 1em;
+	margin-bottom: 2em;
+	font-size: 0.9em;
+}
+
+.indented {
+	padding: 0.5em 0;
+	padding-left: 2em;
+	background-color: var(--light-blue);
+}
+
+p {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 0.75em;
+}
+
+/* All headers are set to 1em on mobile viewports. All headings are "Raleway" */
+h1, h2, h3, h4 {
+	font-size: 1em;
+	margin: 0.50em 0;
+	font-family: "Raleway", -sans-serif;
+}
+
+h1, h2 {
+	margin: 0.75em 0;
+	font-size: 1.2em;
+}
+
+h1 {
+	color: var(--QE-Blue);
+}
+
+/* h3 and h4 are bold and have thin margins */
+h3, h4 {
+	font-weight: bold;
+	margin: 0.5em 0;
+}
+h4 { margin-top: 1.5em;}
+h3 {
+	margin-top: 3em;
+	font-size: 1.1em;
+}
+
+button {
+	font-family: "Lato", sans-serif;
+}
+button h2, button h4 {
+	font-size: 1em;
+	margin: 0;
+	font-weight: normal;
+	font-family: "Lato", sans-serif;
+}
+
+aside {
+	font-weight: bold;
+	color: var(--QE-Blue);
+}
+
+article section a {
+	font-weight: bold;
+	text-decoration: underline;
+	margin: 0;
+	padding: 0;
+}
+
+/* Links in articles are always blue */
+article a {
+	color: var(--QE-Blue) !important;
+}
+
+article section {
+	margin: 2em auto;
+	clear: both;
+
+}
+
+ul li {
+	margin: auto;
+	margin-top: 0;
+	padding-left: 1em;
+}
+
+div {
+	display: block;
+	width: 100%;
+}
+
+details {
+	width: 100%;
+	background-color: var(--light-blue);
+}
+
+details section {
+	width: 90%;
+	margin: auto;
+	padding: 0.5em 0;
+}
+
+.expand-content {
+	padding: 0.5em 0;
+}
+
+table, td, th{
+	border-collapse: collapse;
+	border: solid var(--med-blue) 1px;
+}
+
+table {
+	width: 100%;
+	margin-bottom: 2em;
+}
+
+td, th {
+	border-top: none;
+	text-align: center;
+	padding: 0.25em 0;
+}
+td {
+	border-bottom: none;
+	color: #000000;
+}
+
+
+tr:nth-child(even) {
+	background-color: var(--light-blue);
+}
+
+figure {
+	margin: 0;
+	padding: 0;
+	margin: 1em auto;
+	margin-top: 3em;
+	width: 100%;
+	display: block;
+	max-height: 30%;
+}
+
+figure img {
+	height: 128px;
+	max-height: 100%;
+	display: inline-block;
+	float: left;
+	padding-right: 1em;
+	margin-bottom: 0.5em;
+}
+
+figcaption h3 {
+	font-weight: 600;
+}
+
+#ann img {
+	height: 128px;
+	width: auto;
+	padding: 0;
+}
+
+#ann #qe-group {
+	width: 300px;
+	max-width: 70%;
+	margin-top: -20px;
+	height: auto;
+}
+
+#ann figcaption{
+	clear:both;
+	display: block;
+	padding-top: 0.5em;
+}
+
+#ann figcaption h2 {
+	padding: 0;
+}
+
+#alice figure figcaption h2 {
+	padding: 0;
+}
+
+#coaches-page h1 {
+	margin-top: 0em;
+}
+#coaches-page h2 {
+	font-size: 1em;
+	padding-top: 2em;
+}
+#coaches-page h3 {
+	margin-top: 0.5em;
+	font-size: 0.9em;
+	font-weight: bold;
+}
+#coaches-page .expandable {
+	clear: both;
+}
+
+#coaches-page .expand-content {
+	background-color: var(--light-blue);
+	width: 100%;
+}
+
+#coaches-page .expand-content p {
+	padding: 0 2em;
+}
+
+#coaches-page .expandbtn {
+	font-size: 1.2em;
+}
+
+
+footer {
+	margin: 1em auto;
+	width: 95%;
+	text-align: center;
+	font-size: 1em;
+	clear: both;
+}
+
+footer a {
+	text-decoration: none;
+	color: black;
+	font-size: 0.9em;
+}
+
+footer p {
+	width: 100%;
+	font-size: 0.8em;
+	color: grey;
+}
+
+footer a:hover {
+	color: var(--QE-Blue);
+	text-decoration: underline;
+}
+
+/******************************************************************************
+ * Logo Styling (logo banner on top of the page)
+ *****************************************************************************/
+/* logo image container */
+.logo {
+	background-color: #FFFFFF;
+	width: 80%;
+	margin: 1em 0;
+	margin-left: 5%;
+}
+
+.logo img {
+	display: block;
+	width: 463px;
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto;
+
+}
+
+
+/******************************************************************************
+* Splash Styling
+*****************************************************************************/
+#splash {
+	width: 100%;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	height: auto;
+	margin: 0 0;
+	margin-top: 1em;
+	padding: 0.5em 0.5em;
+	color: var(--QE-Blue);
+}
+
+#splash h1 {
+	max-width: 100%;
+	font-size: 1.2em;
+	text-align: center;
+	margin: 0 0;
+	padding: 0.2em 0;
+}
+
+#splash h2 {
+	width: 90%;
+	margin: 0 auto;
+	font-size: 0.8em;
+	text-align: center;
+	padding-top: 0.5em;
+	padding-bottom: 0.3em;
+}
+
+
+
+/*****************************************************************************
+* Card Panel Styling Begins
+****************************************************************************/
+#card-panel {
+	font-weight: normal;
+	display: block;
+	margin: 0 auto 0 auto;
+	width: 100%;
+	padding: 0;
+}
+
+#card-panel a {
+	text-decoration: none;
+	color: grey;
+}
+
+#card-panel h2 {
+	padding: 1em 0;
+	margin: 0;
+	width: 100%;
+	height: 10%;
+	font-size: 1em;
+	color: white;
+	text-align: center;
+	background-color: rgba(13, 13, 13, 0.85); /* last param is opacity */
+}
+#card-panel ul {
+	list-style-type: none;
+	margin: 0 auto 0 auto;
+	padding: 0;
+	width: 100%;
+}
+
+/*By defautl, loads entire stock image. Seperate CSS sheets for other sizes. */
+#card-panel ul li {
+
+	width: 311px;
+	height: 235px;
+	max-width: 90%;
+	max-height: 90%;
+	margin: auto; /* centers list items on the page */
+	padding-top: 1em;
+	padding-left: 0;
+
+
+}
+
+#card-panel p {
+	background-color: rgba(13, 13, 13, 0.7); /* last param is opacity */
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box;    /* Firefox, other Gecko */
+	box-sizing: border-box;         /* Opera/IE 8+ */
+	width: 100%;
+	height: 76%;
+	color: rgb(226, 224, 224);
+	padding: 1em 1em;
+	margin: 0;
+	text-align: left;
+	padding-top: 10%;
+	font-size: 0.8em;
+}
+
+#content-ind {
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/individual-back.jpg);
+	background-clip: content-box;
+	background-repeat: no-repeat;
+}
+
+#content-org {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(13, 13, 13, 0.8); /* last param is opacity */
+	background-image: url(../images/corporation-back.jpg);
+	background-clip: content-box;
+	background-repeat: no-repeat;
+}
+
+#content-coa {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(13, 13, 13, 0.8); /* last param is opacity */
+	background-image: url(../images/coaching-back.jpg);
+	background-clip: content-box;
+	background-repeat: no-repeat;
+}
+
+/* Events Page ****************************************************************/
+
+#event-info {
+	width: 90%;
+	margin: 0 auto;
+	font-size: 0.9em;
+	margin-top: 2em;
+}
+
+
+/* Contact Us Page ************************************************/
+form {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	width: 100%;
+	margin: auto;
+
+}
+form input, textarea. select {
+	display: block;
+	border-style: solid;
+	border-width: 1px;
+	width: 100%;
+	padding: 0.2em;
+	margin-top: 0.5em;
+	margin-bottom: 1em;
+	border-color: #000000;
+	font-family: "Raleyway", sans-serif, arial;
+}
+
+.chkbx {
+	display: inline;
+}
+
+form .inline-chkbx {
+	width: 70%;
+	display: inline-block;
+	margin-left: 3em;
+	margin-top: 1em;
+
+}
+form p {
+	margin: 0;
+	padding: 0;
+}
+
+/* submit button */
+.button {
+	border-style: outset;
+	margin-top: 1em;
+	background-color: var(--QE-Blue);
+	color: #ffffff;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	width: 70%;
+	margin: auto;
+	font-family: "Lato", sans-serif;
+}
+
+/* Individuals, Organization, and Coaches card pages ************************/
+/* Styles button clicked to expand expand-content text */
+
+/* expandable text hidden by default */
+
+/* section element containing expand button and children */
+.expandable {
+	margin: 0.5em auto;
+}
+
+/* text content within expandable element */
+.expand-content {
+	width: 90%;
+	margin: auto;
+	display: none;
+}
+
+/* button that expands child content */
+.expandbtn {
+	background-color: var(--med-blue);
+  	color: #000000;
+  	cursor: pointer;
+  	width: 100%;
+  	border: none;
+  	text-align: left;
+ 	outline: none;
+ 	font-size:  1em;
+	padding: 0.4em;
+  	transition: 0.3s;
+}
+
+.active, .expandbtn:hover {
+  background-color: var(--light-gold);
+}
+
+#thankyou-page section {
+	text-align: center;
+	margin: 10% auto;
+	width: 70%;
+}
+
+#thankyou-page section a {
+	font-size: 1.1em;
+	margin-top: 3em;
+	font-weight: bold;
+}
+
+#individuals-page .active {
+	background-color: var(--light-gold);
+}
+.tablet {display: none;}
+/* WBE certification logo not displayed on mobile */
+#wbe-logo {display: none;}
+#top-nav {display: none;}
+
+/* Special styling for devices smaller than modern phones */
+@media only screen and (max-width: 380px) {body {font-size: 0.8em;}}
+
+/* Medium breakpoint (landscape mobiles) */
+@media only screen and (min-width: 580px) {
+	nav {
+		font-size: 1.1em;
+		width: 80%;
+	}
+}
+
+/* Tablet breakpoint */
+@media only screen and (min-width: 850px) {
+	body {
+		width: 90%;
+		font-size: 1.2em;
+	}
+
+	h1 {
+		font-size: 1.4em;
+	}
+
+	 #top-nav {
+		width: 100%;
+		padding: 0.5em 0;
+		font-size: 1.2em;
+		margin: 1em auto;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		border: solid var(--QE-Gold) thin;
+		border-right: none;
+		border-left: none;
+	}
+
+
+	/* navbar hyperlinks are always blue */
+	#top-nav a {
+		text-decoration: none;
+		color: var(--QE-Blue) !important;
+		font-size: 1em;
+	}
+
+	#hamburger {
+		top: 8em;
+		right: 0;
+		padding-right: 0.5em;
+	}
+	.sidenav {
+		top: 9em;
+		right: 0.5em;
+	}
+
+	.sidenav .closebtn {
+		margin-top: 0;
+	}
+
+	.logo img {
+		width: 463px;
+		height: 69px;
+		max-width: 90%;
+		height: auto;
+		max-height: 10%;
+		margin: 0 auto;
+		padding-top: 1em;
+		padding-left: 1em;
+	}
+
+	footer {
+		font-size: 1.1em;
+	}
+
+	/* Articles width is reduced, and font-size is increased */
+	article {
+		width: 100%;
+		font-size: 1em;
+	}
+
+
+	/******************************************************************************
+	* Splash Styling
+	*****************************************************************************/
+	#splash {
+		font-size: 1.3em;
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
+	/*****************************************************************************
+	* Conent Panel DESKTOP Styling Begins
+	****************************************************************************/
+	#card-panel {
+		width: 100%;
+		margin: auto;
+		margin-bottom: 3em;
+		font-size: 0.8em;
+	}
+
+	#card-panel ul {
+		width: 100%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	#card-panel ul li {
+		display: inline-block;
+		width: 312px;
+		max-width: 30%;
+		vertical-align: top;
+		margin: 0 1%;
+	}
+
+	/* card paragraph element hidden until card is hovered */
+	#card-panel p {
+		display: none;
+		height: 77%;
+	}
+
+	#card-panel a:hover p { display: block; 	}
+
+	/* Events Page ****************************************************************/
+	#event-info {
+		text-align: center;
+	}
+
+	.wbe {
+		display: flex;
+		align-items: center;
+	}
+	.wbe p {
+		margin: 0;
+	}
+
+	/* wbe logo is displayed at the bottom of the page */
+	#wbe-logo {
+		display: inline;
+		height: 4em;
+		width: auto;
+		float: left;
+		margin-left: 2em;
+	}
+
+	/* Contact Us Page ***********************************************************/
+	/* Reduces width of contact page content */
+	#contact-page article {
+		width: 60%;
+	}
+
+	form {
+		margin: auto;
+		justify-content: left;
+	}
+
+	form .button {
+		width: 50%;
+	}
+
+	/* E-Zine page ****************************************************************/
+	#ezine-page article {
+		width: 60%;
+	}
+
+	/* Coaches Page **************************************************************/
+
+	#coaches-page button {
+		font-size: 1.2em;
+	}
+	#coaches-page h1 {
+		display: inline-block;
+		float: left;
+	}
+
+	#coaches-page h2 {
+		padding-top: 1em;
+	}
+
+	#ann img {
+		margin-top: 50px;
+	}
+	#ann #qe-group {
+		width: 500px;
+		max-width: 70%;
+		margin: auto;
+		margin-top: -30px;
+		margin-left: 20px;
+		height: auto;
+	}
+
+	#ann figcaption {
+		clear:both;
+		display: block;
+		padding-top: 0;
+	}
+
+	#ann {
+		margin-top: 80px;
+	}
+
+	#alice figure figcaption {
+		font-size: 1em;
+	}
+
+	#thankyou-page section {
+		text-align: left;
+		margin-top: 5%;
+		width: 40%;
+	}
+
+	#thankyou-page section a {
+		display: block;
+		text-align: center;
+	}
+
+
+}
+
+@media only screen and (min-width: 1300px) {
+
+	body {
+		width: 75%;
+	}
+	nav {
+		width: 100%;
+	}
+
+	nav a {
+		font-size: 1.2em;
+	}
+
+}
