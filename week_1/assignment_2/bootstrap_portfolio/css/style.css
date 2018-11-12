@@ -36,6 +36,10 @@ header {
 #navbarNav {
   justify-content: flex-end;
 }
+.card-img-top {
+  width: 100%rem;
+  height: 13rem;
+}
 
 
 h2 {
@@ -74,3 +78,4 @@ footer a {
   
 
 }  
+
